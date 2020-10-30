@@ -1,0 +1,374 @@
+.image_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.research {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.projectA{
+  background-color: cyan;
+}
+
+.proj-images{
+  width: 100%;
+}
+
+.proj-img-selecter{
+  text-align: center;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  min-width: 1090px;
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px;
+}
+
+.skills, .classes, .contact {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  background-color:ivory;
+  text-align: center;
+}
+
+.classes td, .classes tr,  .skills td, .skills tr{
+  padding: 7px;
+}
+
+.skills {
+  width: 900px;
+  color: ivory;
+}
+
+.gold-star {
+  color: gold;
+}
+
+.classes {
+  width: 1050px;
+}
+
+.classes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+}
+
+* {box-sizing:border-box}
+
+.skills-back{
+  min-width: 1090px;
+  background-color:dimgrey; 
+  padding:40px
+}
+
+.classes-back{
+  min-width: 1090px;
+  background-color:ivory;
+  padding:40px
+}
+
+.foot-main{
+  background-color: ivory;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*Style for timeline*/
+:root {
+--white: #fff;
+--divider: lightgrey;
+--body: #f5f7f8;
+}
+
+.chart-wrapper {
+padding: 0 10px;
+margin: 0 auto;
+}
+
+
+/* CHART-VALUES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.chart-wrapper .chart-values {
+position: relative;
+display: flex;
+flex-direction: column;
+font-weight: bold;
+}
+
+.chart-wrapper .chart-values li {
+flex: 1;
+text-align: center;
+display: block;
+padding: 10px;
+}
+
+.list-year {
+flex: 1;
+text-align: center;
+display: block;
+padding: 0px;
+font-size: 40px;
+}
+
+.list-dec {
+  padding-top:0px;
+}
+
+.list-jan {
+  padding-bottom:0px;
+}
+
+.chart-wrapper .chart-values li:not(:last-child) {
+position: relative;
+}
+
+
+/* CHART-BARS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.chart-wrapper .chart-bars li {
+position: absolute;
+color: var(--white);
+margin-bottom: 15px;
+font-size: 16px;
+border-radius: 20px;
+width: 2%;
+opacity: 0;
+transition: all 0.65s linear 0.2s;
+font-size: 24px;
+}
+
+.chart-wrapper .chart-bars li .tooltiptext {
+visibility: hidden;
+width: 500px;
+height: 200px;
+background-color: black;
+color: #fff;
+text-align: left;
+border-radius: 6px;
+padding: 5px;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+top: 50%;
+left: 105%;
+}
+
+.chart-bars li:hover {
+width: 4%;
+}
+
+.chart-bars li:hover .tooltiptext {
+visibility: visible;
+}
+/*End of Style for timeline*/
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+  line-height: 1;
+  font-size: 1.1em;
+  font-family: Georgia, Arial, sans-serif;
+  background-color: ivory;
+}
+h1 {
+  background-color: darkorange;
+  color: ivory;
+  font-size: 62px;
+  text-align: center;
+  padding: 40px;
+}
+h2, h4 {
+font-size: 32px;
+text-align: center;
+padding: 10px;
+}
+h2 {
+color: ivory;
+}
+h4 {
+color: black;
+}
+h3 {
+color: white;
+background-color: darkblue;
+font-size: 32px;
+text-align: center;
+padding: 10px;
+}
+p {
+font-size: 14px;
+font-size-adjust: 0.5;
+font-stretch: normal;
+font-style: normal;
+font-weight: bold;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}

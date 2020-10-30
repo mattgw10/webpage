@@ -1,0 +1,52 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.cell-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.gridCell {
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+  width: 34px;
+}
+
+.gridCell:focus {
+  outline: none;
+}
+
+.search{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-grid {
+  position: absolute;
+}
+
+.master-grid {
+  position: relative;
+}
+
+.draggable-points {
+  position: absolute;
+  z-index: 1;
+}
+
+.search-lines{          
+  position: relative;
+  top: 0;
+  left: 0;
+}
