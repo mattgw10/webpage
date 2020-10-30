@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 import { Dijkstras } from '../components/dijkstras'
 import { deepCopy, distance, coord_to_grid,
 		collision_check, clip, colorScale, goal_check } from '../components/functions'
-import PaperFile from "../assets/resume.pdf"
+import PaperFile from "../assets/paper.pdf"
 import ThesisFile from "../assets/thesis.pdf"
 import ControllerImg from "../images/controller_diagram_w_shared.png"
 import PlanningImg from "../images/rrt_bugtrap_path.png"
@@ -723,8 +723,8 @@ class Search extends React.Component {
 		    			The bottom grids show a comparison between RIOT and RRT. Clicking "extend" or "extend x 50" makes
 		    			one or fifty expansion attempts respectivley for an algorithm. The color gradient of the RIOT grid shows
 		    			the abstraction guidance with green being expected low cost areas.
-		    		</p>
-		    		<p><Link to="../">Go back to home page</Link></p><br></br>
+		    		</p><br></br>
+		    		
 		    		
 		    		<div className="master-grid"
 		    			style={{paddingLeft:.55*W*cell_width+"px"}}
