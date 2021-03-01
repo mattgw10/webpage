@@ -7,6 +7,12 @@ import TeamImg from "../images/lunacats_team.jpg"
 import RobotImg from "../images/lunacats_robot.jpg"
 import WheeledImg from "../images/wheeled_robot.png"
 import QuadImg from "../images/quad_rotor.png"
+import A from "../images/A_small_rotated.png"
+import Process from "../images/process.png"
+import B from "../images/Compare_B.png"
+import E from "../images/Compare_E.png"
+import GRAIL_A from "../images/Compare_GRAIL_A.png"
+import GRAIL_B from "../images/Compare_GRAIL_B.png"
 
 function ProjImage(props) {
   	return (
@@ -43,6 +49,33 @@ class Projects extends React.Component {
 					image: WheeledImg,
 					slideAlt: "Wheeled Robot",
 					slideDesc: "Non-holonomic wheeled robot"
+				}]},
+				{
+				slideIndex: 0, 
+				slides: [{
+					image: A,
+					slideAlt: "A",
+					slideDesc: "17 March 2013 crater event. Small and rotated image alignment and crater identification"
+				},{
+					image: Process,
+					slideAlt: "Process",
+					slideDesc: "Crater identification process with difference, threshold, and erosion steps"
+				},{
+					image: B,
+					slideAlt: "B",
+					slideDesc: "New crater 260 identified by algorithm"
+				},{
+					image: E,
+					slideAlt: "E",
+					slideDesc: "17 March 2013 crater event with photos at different times of day identified by algorithm"
+				},{
+					image: GRAIL_A,
+					slideAlt: "GRAIL A",
+					slideDesc: "GRAIL A landing site identified by algorithm"
+				},{
+					image: GRAIL_B,
+					slideAlt: "GRAIL B",
+					slideDesc: "GRAIL B landing site identified by algorithm"
 				}]}	
 			]
 		};
@@ -159,6 +192,43 @@ class Projects extends React.Component {
 			          		controllers, vision systems, wireless communication, and theoretical control systems analysis. 
 			          		Particle swarm algorithms were also developed so the robots could coordinate for complex problems and
 			          		still avoid collision.
+				        </p>
+
+				        <h3>NASA Image Co-Registration Challenge</h3>
+			          	<br></br>
+			          	<div className="slideshow-container">
+			          		<ProjImage
+					            slide={this.state.slideShow[2].slides[this.state.slideShow[2].slideIndex].image}
+					            slideIndex={this.state.slideShow[2].slideIndex+1}
+					            slideLen={this.state.slideShow[2].slides.length}
+					            slideAlt={this.state.slideShow[2].slides[this.state.slideShow[2].slideIndex].slideAlt}
+					            slideDesc={this.state.slideShow[2].slides[this.state.slideShow[2].slideIndex].slideDesc}
+					        />
+
+				            <a className="prev" onClick={() => this.plusSlides(2,-1)}>&#10094;</a>
+				            <a className="next" onClick={() => this.plusSlides(2,1)}>&#10095;</a>
+			          	</div>
+
+			          	<div className="proj-img-selecter">
+				            <span className="dot" onClick={() => this.currentSlide(2,0)}></span>
+				            <span className="dot" onClick={() => this.currentSlide(2,1)}></span>
+				            <span className="dot" onClick={() => this.currentSlide(2,2)}></span>
+				            <span className="dot" onClick={() => this.currentSlide(2,3)}></span>
+				            <span className="dot" onClick={() => this.currentSlide(2,4)}></span>
+				            <span className="dot" onClick={() => this.currentSlide(2,5)}></span>
+			          	</div>
+			          	<p>
+			          		This was a NASA challenge on Topcoder for identifying new craters from images of the moon. By comparing
+			          		old images to new images from different NASA missions, computer vision is used to align
+			          		the images and find new features. This challenge is difficult due to different picture angles and translations, 
+			          		different camera resolutions, and pictures taken at different times of day resulting in different shadows.
+
+			          		My approach involved aligning the images using the SIFT algorithm, Lowe's Ratio test, and a hompgraphy matrix
+			          		found by the RANSAC algorithm to warp the perspective of one image to align with the other and only leave 
+			          		the overlap of the two images. After this the differences of the images were found, thresholded, and contoured 
+			          		to identify new features. Pruning, erosion, and inverting along the gray scale were used to filter noise and solve 
+			          		issues of photos taken at different times of day. Overall the algorithm was very effective and resulted in 
+			          		3rd place in the competition.
 				        </p>
 			        </div>
 		  		</div>
