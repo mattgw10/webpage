@@ -25,9 +25,12 @@ export default function Home() {
 			<h1>Hi, I'm Matt Westbrook</h1>
 			<div className="contact">
 				<h4>
-					I'm a software engineer who started out as a mechanical engineer until I discovered robotics
-					and artificial intelligence! I just finished my Master's degree and my career interests are in robotics, control systems, artificial intelligence,
-					motion planning, and machine learning.
+					I'm a software engineer with a passion for artificial intelligence and algorithms! 
+					I have research experience in motion planning, artificial intelligence, machine learning,
+					and robotics including a publication in IROS 2020. My skills and coursework are detailed more below and you
+					can see some more info about my research, projects, and work experience on the side bar.
+					I'm always looking for a challenge, trying to learn as much as possible, and looking to continue my 
+					career with algorithms and artificial intellgence in robotics or finance.
 				</h4>
 				<br></br>
 				<h4>Here's my contact info:</h4>
@@ -108,20 +111,20 @@ export default function Home() {
 					    <td className="gold-star">★★★★★</td>
 					</tr>
 					<tr>
-					    <td>LaTex</td>
+					    <td>React JS</td>
 					    <td className="gold-star">★★★★★</td>
-					    <td>Solidworks</td>
+					    <td>Node JS</td>
 					    <td className="gold-star">★★★★</td>
-					    <td>Javascript</td>
-					    <td className="gold-star">★★</td>
+					    <td>Computer Hardware</td>
+					    <td className="gold-star">★★★</td>
 					</tr>
 					<tr>
 						<td>Windows</td>
 					    <td className="gold-star">★★★★★</td>
 					    <td>Linux</td>
 					    <td className="gold-star">★★★★★</td>
-					    <td>Computer Hardware</td>
-					    <td className="gold-star">★★★</td>
+					    <td></td>
+					    <td></td>
 					</tr>
 					<tr>
 						<td>Tensorflow</td>
