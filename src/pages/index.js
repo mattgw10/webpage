@@ -25,12 +25,8 @@ export default function Home() {
 			<h1>Hi, I'm Matt Westbrook</h1>
 			<div className="contact">
 				<h4>
-					I'm a software engineer with a passion for artificial intelligence and algorithms! 
-					I have research experience in motion planning, artificial intelligence, machine learning,
-					and robotics including a publication in IROS 2020. My skills and coursework are detailed more below and you
-					can see some more info about my research, projects, and work experience on the side bar.
-					I'm always looking for a challenge, trying to learn as much as possible, and looking to continue my 
-					career with algorithms and artificial intellgence in robotics or finance.
+					I'm a software engineer with a passion for artificial intelligence, autonomous vehicles, and algorithms! 
+					I programmed this website to detail some of my experience and projects I've worked on so feel free to take a look around!
 				</h4>
 				<br></br>
 				<h4>Here's my contact info:</h4>

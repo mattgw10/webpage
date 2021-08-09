@@ -26,9 +26,28 @@ export default function Work() {
 				</h4>
 				<br></br>
 				<VerticalTimeline>
+					<VerticalTimelineElement
+					    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+					    date="2021 - Present"
+					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+					    icon={<MdWork />}
+				  	>
+					    <h3 >Software Engineer -  Behavior and Motion Planning</h3>
+					    <h4 style={{color: '#fff'}}>Virgin Hyperloop</h4>
+					    <p>
+					      Software Development, Autonomous Transit
+					    </p>
+					    <p>
+					      	I develop command and control software for autonomous pods in a hyperloop. The software includes 
+					      	motion planning and behavior control for pods at high speeds and high traffic, including merging and convoy formation.
+					    </p><br></br>
+						<p>
+							In this role I program mainly using C++, Matlab, and Python and use tools such as JIRA and Confluence.
+						</p>
+				  	</VerticalTimelineElement>
 				  	<VerticalTimelineElement
 					    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					    date="2018 - Present"
+					    date="2018 - 2021"
 					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					    icon={<MdWork />}
 				  	>
